@@ -56,7 +56,7 @@ public struct Point2D: Hashable, CustomStringConvertible {
     }
 }
 
-extension [Point2D] {
+public extension [Point2D] {
     var area: Int {
         var area = 0
         var perimeter = 0

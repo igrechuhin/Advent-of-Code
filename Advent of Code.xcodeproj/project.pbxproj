@@ -35,10 +35,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		124508622B39D322000C613E /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sources; path = Playground.playground/Sources; sourceTree = "<group>"; };
 		1271D49C2B38D216006133F9 /* Advent of Code */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Advent of Code"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1271D49F2B38D216006133F9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		1286BD422B39AFE400073FAF /* 2023.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = 2023.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		129A25912B39B1B600C6F9F8 /* Helpers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Helpers; path = 2023.playground/Sources/Helpers; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +56,8 @@
 		1271D4932B38D216006133F9 = {
 			isa = PBXGroup;
 			children = (
-				1286BD422B39AFE400073FAF /* 2023.playground */,
 				1271D49F2B38D216006133F9 /* main.swift */,
-				129A25912B39B1B600C6F9F8 /* Helpers */,
+				124508622B39D322000C613E /* Sources */,
 				1271D49D2B38D216006133F9 /* Products */,
 				129822D12B38D47300EA63D9 /* Frameworks */,
 			);

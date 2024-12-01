@@ -12,7 +12,6 @@
 		129822D02B38D30900EA63D9 /* SwiftZ3 in Frameworks */ = {isa = PBXBuildFile; productRef = 129822CF2B38D30900EA63D9 /* SwiftZ3 */; };
 		34B3BE8D2CFC576500F36067 /* Direction2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3BE852CFC576500F36067 /* Direction2D.swift */; };
 		34B3BE8E2CFC576500F36067 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3BE8A2CFC576500F36067 /* Sequence.swift */; };
-		34B3BE8F2CFC576500F36067 /* GetInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3BE862CFC576500F36067 /* GetInput.swift */; };
 		34B3BE902CFC576500F36067 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3BE872CFC576500F36067 /* Heap.swift */; };
 		34B3BE912CFC576500F36067 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3BE882CFC576500F36067 /* Math.swift */; };
 		34B3BE922CFC576500F36067 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3BE842CFC576500F36067 /* Collection.swift */; };
@@ -81,6 +80,7 @@
 		34B3BFBC2CFC71AD00F36067 /* Day2Input.txt in Resources.2015 */ = {isa = PBXBuildFile; fileRef = 34B3BFAE2CFC716100F36067 /* Day2Input.txt */; };
 		34B3BFBD2CFC71AD00F36067 /* Day3Input.txt in Resources.2015 */ = {isa = PBXBuildFile; fileRef = 34B3BFAF2CFC716100F36067 /* Day3Input.txt */; };
 		34B3BFBF2CFC74EB00F36067 /* Day1Input.Test.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 34B3BFBE2CFC74EB00F36067 /* Day1Input.Test.txt */; };
+		34B3BFC32CFC762A00F36067 /* AoC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B3BFC22CFC762300F36067 /* AoC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -162,7 +162,6 @@
 		34B3BE832CFC576500F36067 /* Beam2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beam2D.swift; sourceTree = "<group>"; };
 		34B3BE842CFC576500F36067 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		34B3BE852CFC576500F36067 /* Direction2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction2D.swift; sourceTree = "<group>"; };
-		34B3BE862CFC576500F36067 /* GetInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetInput.swift; sourceTree = "<group>"; };
 		34B3BE872CFC576500F36067 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		34B3BE882CFC576500F36067 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		34B3BE892CFC576500F36067 /* Point2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point2D.swift; sourceTree = "<group>"; };
@@ -230,6 +229,7 @@
 		34B3BFB32CFC716100F36067 /* 2015Day3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2015Day3.swift; sourceTree = "<group>"; };
 		34B3BFB82CFC717100F36067 /* 2015.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2015.swift; sourceTree = "<group>"; };
 		34B3BFBE2CFC74EB00F36067 /* Day1Input.Test.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day1Input.Test.txt; sourceTree = "<group>"; };
+		34B3BFC22CFC762300F36067 /* AoC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AoC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,10 +276,10 @@
 		34B3BE8C2CFC576500F36067 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				34B3BFC22CFC762300F36067 /* AoC.swift */,
 				34B3BE832CFC576500F36067 /* Beam2D.swift */,
 				34B3BE842CFC576500F36067 /* Collection.swift */,
 				34B3BE852CFC576500F36067 /* Direction2D.swift */,
-				34B3BE862CFC576500F36067 /* GetInput.swift */,
 				34B3BE872CFC576500F36067 /* Heap.swift */,
 				34B3BE882CFC576500F36067 /* Math.swift */,
 				34B3BE892CFC576500F36067 /* Point2D.swift */,
@@ -469,8 +469,8 @@
 				34B3BEA32CFC5BA500F36067 /* 2024.swift in Sources */,
 				34B3BEA42CFC5BA500F36067 /* 2024Day1.swift in Sources */,
 				34B3BE8E2CFC576500F36067 /* Sequence.swift in Sources */,
-				34B3BE8F2CFC576500F36067 /* GetInput.swift in Sources */,
 				34B3BE902CFC576500F36067 /* Heap.swift in Sources */,
+				34B3BFC32CFC762A00F36067 /* AoC.swift in Sources */,
 				34B3BE912CFC576500F36067 /* Math.swift in Sources */,
 				34B3BF7A2CFC715000F36067 /* 2023.swift in Sources */,
 				34B3BF7B2CFC715000F36067 /* 2023Day1.swift in Sources */,

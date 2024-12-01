@@ -1,15 +1,6 @@
-enum AoC2015 {
-    static func getInput(
-        fileName: String,
-        ext: String = "txt"
-    ) -> String {
-        Advent_of_Code.getInput(
-            fileName: fileName,
-            inDirectory: "Resources/2015",
-            ext: ext
-        )
-    }
-    
+enum AoC2015: AoC {
+    static var year: AoCYear { .year2015 }
+
     static func run() {
         assert(solveDay1Puzzle1() == 280)
         assert(solveDay1Puzzle2() == 1_797)

@@ -1,14 +1,10 @@
 import Foundation
 
-private let testInput = false
+private let mode = AoCMode.quest
 
 extension AoC2024 {
   private static func getDay1Input() -> String {
-      if testInput {
-          getInput(fileName: "Day1Input.Test")
-      } else {
-          getInput(fileName: "Day1Input")
-      }
+      getInput(day: .day1, mode: mode)
   }
   
   private static func getPuzzleInput() -> ([Int], [Int]) {

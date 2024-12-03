@@ -5,7 +5,8 @@ protocol AoC {
 }
 
 enum AoCMode {
-    case test
+    case test1
+    case test2
     case quest
 }
 
@@ -45,7 +46,8 @@ enum AoCDay: String {
     func inputFileName(mode: AoCMode) -> String {
         let inputString = "\(self.rawValue.capitalized)Input"
         return switch mode {
-        case .test: "\(inputString).Test"
+        case .test1: "\(inputString).Test1"
+        case .test2: "\(inputString).Test2"
         case .quest: inputString
         }
     }

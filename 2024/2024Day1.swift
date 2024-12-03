@@ -1,14 +1,8 @@
 import Foundation
 
-private let mode = AoCMode.quest
-
 extension AoC2024 {
-    private static func getDay1Input() -> String {
-        getInput(day: .day1, mode: mode)
-    }
-    
-    private static func getPuzzleInput() -> ([Int], [Int]) {
-        let inputs = getDay1Input()
+    private static func getPuzzleInput(mode: AoCMode) -> ([Int], [Int]) {
+        let inputs = getInput(day: .day1, mode: mode)
             .components(separatedBy: .newlines)
             .map {
                 $0.components(separatedBy: .whitespaces)
@@ -68,8 +62,8 @@ extension AoC2024 {
     
     // Your puzzle answer was 1189304.
     
-    static func solveDay1Puzzle1() -> Int {
-        let (leftList, rightList) = getPuzzleInput()
+    static func solveDay1Puzzle1(_ mode: AoCMode) -> Int {
+        let (leftList, rightList) = getPuzzleInput(mode: mode)
         
         return zip(
             leftList.sorted(),
@@ -110,8 +104,8 @@ extension AoC2024 {
     
     // Your puzzle answer was 24349736.
     
-    static func solveDay1Puzzle2() -> Int {
-        let (leftList, rightList) = getPuzzleInput()
+    static func solveDay1Puzzle2(_ mode: AoCMode) -> Int {
+        let (leftList, rightList) = getPuzzleInput(mode: mode)
         
         var countRight: [Int: Int] = [:]
         for item in rightList {

@@ -1,14 +1,8 @@
 import Foundation
 
-private let mode = AoCMode.quest
-
 extension AoC2024 {
-    private static func getDay2Input() -> String {
+    private static func getPuzzleInput(mode: AoCMode) -> [[Int]] {
         getInput(day: .day2, mode: mode)
-    }
-    
-    private static func getPuzzleInput() -> [[Int]] {
-        getDay2Input()
             .components(separatedBy: .newlines)
             .map {
                 $0.components(separatedBy: .whitespaces)
@@ -52,8 +46,8 @@ extension AoC2024 {
 
     // Your puzzle answer was 359.
 
-    static func solveDay2Puzzle1() -> Int {
-        getPuzzleInput()
+    static func solveDay2Puzzle1(_ mode: AoCMode) -> Int {
+        getPuzzleInput(mode: mode)
             .map(\.isReportSafe)
             .reduce(0) { $0 + ($1 ? 1 : 0) }
     }
@@ -79,8 +73,8 @@ extension AoC2024 {
 
     // Your puzzle answer was 418.
 
-    static func solveDay2Puzzle2() -> Int {
-        getPuzzleInput()
+    static func solveDay2Puzzle2(_ mode: AoCMode) -> Int {
+        getPuzzleInput(mode: mode)
             .map(\.isReportSafeForProblemDampener)
             .reduce(0) { $0 + ($1 ? 1 : 0) }
     }

@@ -30,7 +30,7 @@ extension AoC2024 {
             .matches(of: /mul\(\d{1,3},\d{1,3}\)/)
             .map(\.0)
             .map(mul2Numbers)
-            .reduce(0, +)
+            .sum
     }
 
     // --- Part Two ---
@@ -73,5 +73,5 @@ private func mul2Numbers(_ str: Substring) -> Int {
         .dropLast(1) // )
         .split(separator: ",")
         .compactMap { Int($0) }
-        .reduce(1, *)
+        .mul
 }

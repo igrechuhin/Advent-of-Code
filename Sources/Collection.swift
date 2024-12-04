@@ -23,6 +23,27 @@ extension [[Character]] {
         self[safe: position.y]?[safe: position.x]
     }
     
+    func subArray(from start: Point2D, to end: Point2D) -> [[Character]]? {
+        assert(start.x <= end.x)
+        assert(start.y <= end.y)
+
+        var result = [[Character]]()
+        
+        for y in start.y ... end.y {
+            var row = [Character]()
+            for x in start.x ... end.x {
+                if let character = self[safe: Point2D(y: y, x: x)] {
+                    row.append(character)
+                } else {
+                    return nil
+                }
+            }
+            result.append(row)
+        }
+        
+        return result
+    }
+    
     func getFirstPositionOfCharacter(_ character: Character) -> Point2D? {
         getPositionsOfCharacter(character).first
     }

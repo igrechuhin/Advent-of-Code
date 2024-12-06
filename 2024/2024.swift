@@ -1,4 +1,4 @@
-enum AoC2024: AoC {    
+enum AoC2024: AoC {
     static var year: AoCYear { .year2024 }
 
     static func run() {
@@ -26,5 +26,10 @@ enum AoC2024: AoC {
         assert(solveDay5Puzzle1(.quest) == 6034)
         assert(solveDay5Puzzle2(.test1) == 123)
         assert(solveDay5Puzzle2(.quest) == 6305)
+        
+        assert(solveDay6Puzzle1(.test1) == 41)
+        assert(solveDay6Puzzle1(.quest) == 4883)
+        assert(solveDay6Puzzle2(.test1) == 6)
+        assert(solveDay6Puzzle2(.quest) == 1655) // ~ 18 sec in debug build
     }
 }

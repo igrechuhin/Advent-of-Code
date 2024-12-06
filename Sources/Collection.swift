@@ -23,6 +23,13 @@ extension [[Character]] {
         self[safe: position.y]?[safe: position.x]
     }
     
+    func mutated(position: Point2D, value: Character) -> [[Character]] {
+        guard self[safe: position] != nil else { return self }
+        var copy = self
+        copy[position.y][position.x] = value
+        return copy
+    }
+    
     func subArray(from start: Point2D, to end: Point2D) -> [[Character]]? {
         assert(start.x <= end.x)
         assert(start.y <= end.y)

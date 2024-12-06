@@ -14,4 +14,13 @@ enum Direction2D: CaseIterable {
         case .east: return Point2D(y: 0, x: 1)
         }
     }
+    
+    var rotatedRight: Direction2D {
+        switch self {
+        case .north: return .east
+        case .west: return .north
+        case .south: return .west
+        case .east: return .south
+        }
+    }
 }

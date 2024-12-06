@@ -16,6 +16,10 @@
 		127D21A32D019101009D0C6E /* 2024Day5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127D21A22D019101009D0C6E /* 2024Day5.swift */; };
 		127D21A52D019CE6009D0C6E /* Day5Input.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 127D21A42D019CE6009D0C6E /* Day5Input.txt */; };
 		129822D02B38D30900EA63D9 /* SwiftZ3 in Frameworks */ = {isa = PBXBuildFile; productRef = 129822CF2B38D30900EA63D9 /* SwiftZ3 */; };
+		12E7E8F32D02E64C0061F34D /* Day6Input.Test1.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 12E7E8F22D02E64C0061F34D /* Day6Input.Test1.txt */; };
+		12E7E8F52D02E65F0061F34D /* 2024Day6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E7E8F42D02E65F0061F34D /* 2024Day6.swift */; };
+		12E7E8F72D02EAAD0061F34D /* Day6Input.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 12E7E8F62D02EAAD0061F34D /* Day6Input.txt */; };
+		12E7E8FC2D0307CA0061F34D /* Atomics in Frameworks */ = {isa = PBXBuildFile; productRef = 12E7E8FB2D0307CA0061F34D /* Atomics */; };
 		34AFBAA82D001BC40088ED8F /* 2024Day4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFBAA72D001BC40088ED8F /* 2024Day4.swift */; };
 		34AFBAAA2D001BF80088ED8F /* Day4Input.Test1.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 34AFBAA92D001BF80088ED8F /* Day4Input.Test1.txt */; };
 		34AFBAAC2D0049610088ED8F /* Day4Input.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 34AFBAAB2D0049610088ED8F /* Day4Input.txt */; };
@@ -114,6 +118,8 @@
 				1238C8262CFD9F9400F6AC66 /* Day2Input.txt in Resources.2024 */,
 				1238C8242CFD9B7300F6AC66 /* Day2Input.Test1.txt in Resources.2024 */,
 				34AFBAAA2D001BF80088ED8F /* Day4Input.Test1.txt in Resources.2024 */,
+				12E7E8F32D02E64C0061F34D /* Day6Input.Test1.txt in Resources.2024 */,
+				12E7E8F72D02EAAD0061F34D /* Day6Input.txt in Resources.2024 */,
 				34AFBAAC2D0049610088ED8F /* Day4Input.txt in Resources.2024 */,
 				34C95A5B2CFECE3E002419FB /* Day3Input.Test2.txt in Resources.2024 */,
 				127D21A12D0190E6009D0C6E /* Day5Input.Test1.txt in Resources.2024 */,
@@ -194,6 +200,9 @@
 		127D21A02D0190E6009D0C6E /* Day5Input.Test1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day5Input.Test1.txt; sourceTree = "<group>"; };
 		127D21A22D019101009D0C6E /* 2024Day5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2024Day5.swift; sourceTree = "<group>"; };
 		127D21A42D019CE6009D0C6E /* Day5Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day5Input.txt; sourceTree = "<group>"; };
+		12E7E8F22D02E64C0061F34D /* Day6Input.Test1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day6Input.Test1.txt; sourceTree = "<group>"; };
+		12E7E8F42D02E65F0061F34D /* 2024Day6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2024Day6.swift; sourceTree = "<group>"; };
+		12E7E8F62D02EAAD0061F34D /* Day6Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day6Input.txt; sourceTree = "<group>"; };
 		34AFBAA72D001BC40088ED8F /* 2024Day4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2024Day4.swift; sourceTree = "<group>"; };
 		34AFBAA92D001BF80088ED8F /* Day4Input.Test1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day4Input.Test1.txt; sourceTree = "<group>"; };
 		34AFBAAB2D0049610088ED8F /* Day4Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day4Input.txt; sourceTree = "<group>"; };
@@ -283,6 +292,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E7E8FC2D0307CA0061F34D /* Atomics in Frameworks */,
 				129822D02B38D30900EA63D9 /* SwiftZ3 in Frameworks */,
 				125B8F0C2B38D7370072A38C /* SwiftZ3 in Frameworks */,
 			);
@@ -342,6 +352,8 @@
 				34C95A5A2CFECE3E002419FB /* Day3Input.Test2.txt */,
 				34C95A552CFEC5C8002419FB /* Day3Input.Test1.txt */,
 				127D21A42D019CE6009D0C6E /* Day5Input.txt */,
+				12E7E8F62D02EAAD0061F34D /* Day6Input.txt */,
+				12E7E8F22D02E64C0061F34D /* Day6Input.Test1.txt */,
 				127D21A02D0190E6009D0C6E /* Day5Input.Test1.txt */,
 				34AFBAA92D001BF80088ED8F /* Day4Input.Test1.txt */,
 				34AFBAAB2D0049610088ED8F /* Day4Input.txt */,
@@ -363,6 +375,7 @@
 				34C95A582CFEC5F6002419FB /* 2024Day3.swift */,
 				34AFBAA72D001BC40088ED8F /* 2024Day4.swift */,
 				127D21A22D019101009D0C6E /* 2024Day5.swift */,
+				12E7E8F42D02E65F0061F34D /* 2024Day6.swift */,
 			);
 			path = 2024;
 			sourceTree = "<group>";
@@ -481,6 +494,7 @@
 			packageProductDependencies = (
 				129822CF2B38D30900EA63D9 /* SwiftZ3 */,
 				125B8F0B2B38D7370072A38C /* SwiftZ3 */,
+				12E7E8FB2D0307CA0061F34D /* Atomics */,
 			);
 			productName = "Advent of Code";
 			productReference = 1271D49C2B38D216006133F9 /* Advent of Code */;
@@ -512,6 +526,7 @@
 			mainGroup = 1271D4932B38D216006133F9;
 			packageReferences = (
 				129822CE2B38D30900EA63D9 /* XCRemoteSwiftPackageReference "swift-z3" */,
+				12E7E8FA2D0307CA0061F34D /* XCRemoteSwiftPackageReference "swift-atomics" */,
 			);
 			productRefGroup = 1271D49D2B38D216006133F9 /* Products */;
 			projectDirPath = "";
@@ -567,6 +582,7 @@
 				34AFBAA82D001BC40088ED8F /* 2024Day4.swift in Sources */,
 				34B3BF902CFC715000F36067 /* 2023Day22.swift in Sources */,
 				34B3BF912CFC715000F36067 /* 2023Day23.swift in Sources */,
+				12E7E8F52D02E65F0061F34D /* 2024Day6.swift in Sources */,
 				34B3BF922CFC715000F36067 /* 2023Day24.swift in Sources */,
 				34B3BF932CFC715000F36067 /* 2023Day25.swift in Sources */,
 				34B3BE922CFC576500F36067 /* Collection.swift in Sources */,
@@ -685,6 +701,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -752,6 +769,14 @@
 				kind = branch;
 			};
 		};
+		12E7E8FA2D0307CA0061F34D /* XCRemoteSwiftPackageReference "swift-atomics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-atomics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -764,6 +789,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 129822CE2B38D30900EA63D9 /* XCRemoteSwiftPackageReference "swift-z3" */;
 			productName = SwiftZ3;
+		};
+		12E7E8FB2D0307CA0061F34D /* Atomics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12E7E8FA2D0307CA0061F34D /* XCRemoteSwiftPackageReference "swift-atomics" */;
+			productName = Atomics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

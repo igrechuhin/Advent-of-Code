@@ -85,11 +85,11 @@ private extension [Int] {
         guard count > 1 else { return 0 }
         let first = self[0]
         let second = self[1]
-        let diffs: Set<Int>
+        let diffs: ClosedRange<Int>
         if (1 ... 3).contains(second - first) {
-            diffs = Set(1 ... 3)
+            diffs = 1 ... 3
         } else if (-3 ... -1).contains(second - first) {
-            diffs = Set(-3 ... -1)
+            diffs = -3 ... -1
         } else {
             return 1
         }

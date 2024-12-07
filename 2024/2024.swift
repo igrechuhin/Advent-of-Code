@@ -1,3 +1,5 @@
+import Foundation
+
 enum AoC2024: AoC {
     static var year: AoCYear { .year2024 }
 
@@ -31,5 +33,11 @@ enum AoC2024: AoC {
         assert(solveDay6Puzzle1(.quest) == 4883)
         assert(solveDay6Puzzle2(.test1) == 6)
         assert(solveDay6Puzzle2(.quest) == 1655) // ~ 18 sec in debug build
+        
+        assert(solveDay7Puzzle1(.test1) == 3749)
+        assert(solveDay7Puzzle1(.quest) == 932137732557)
+        
+        assert(solveDay7Puzzle2(.test1) == 11387)
+        assert(solveDay7Puzzle2(.quest) == 661823605105500) // ~ 13 sec in debug build
     }
 }

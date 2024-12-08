@@ -10,7 +10,7 @@ struct Point2D: Hashable, CustomStringConvertible {
     }
     
     var description: String {
-        "(\(x):\(y))"
+        "(\(y):\(x))"
     }
     
     static func + (left: Point2D, right: Point2D) -> Point2D {

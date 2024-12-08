@@ -4,7 +4,7 @@ extension Collection {
     subscript (safe index: Index) -> Element? {
         indices.contains(index) ? self[index] : nil
     }
-  
+    
     var isNotEmpty: Bool { !isEmpty }
 }
 
@@ -18,9 +18,17 @@ extension [[Character]] {
     var size: Point2D {
         Point2D(y: count, x: self[0].count)
     }
-
+    
+    var indices: (ClosedRange<Int>, ClosedRange<Int>) {
+        (0 ... count - 1, 0 ... self[0].count - 1)
+    }
+    
     subscript (safe position: Point2D) -> Character? {
         self[safe: position.y]?[safe: position.x]
+    }
+    
+    func contains(point: Point2D) -> Bool {
+        indices.0.contains(point.y) && indices.1.contains(point.x)
     }
     
     func mutated(position: Point2D, value: Character) -> [[Character]] {
@@ -33,7 +41,7 @@ extension [[Character]] {
     func subArray(from start: Point2D, to end: Point2D) -> [[Character]]? {
         assert(start.x <= end.x)
         assert(start.y <= end.y)
-
+        
         var result = [[Character]]()
         
         for y in start.y ... end.y {

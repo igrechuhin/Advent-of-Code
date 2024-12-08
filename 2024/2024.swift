@@ -39,5 +39,11 @@ enum AoC2024: AoC {
         
         assert(solveDay7Puzzle2(.test1) == 11387)
         assert(solveDay7Puzzle2(.quest) == 661823605105500) // ~ 13 sec in debug build
+        
+        assert(solveDay8Puzzle1(.test1) == 14)
+        assert(solveDay8Puzzle1(.quest) == 261)
+        assert(solveDay8Puzzle2(.test2) == 9)
+        assert(solveDay8Puzzle2(.test1) == 34)
+        assert(solveDay8Puzzle2(.quest) == 898)
     }
 }

@@ -55,5 +55,9 @@ enum AoC2024: AoC {
         assert(solveDay10Puzzle1(.quest) == 822)
         assert(solveDay10Puzzle2(.test1) == 81)
         assert(solveDay10Puzzle2(.quest) == 1801)
+        
+        assert(solveDay11Puzzle1(.test2) == 55312)
+        assert(solveDay11Puzzle1(.quest) == 203609)
+        assert(solveDay11Puzzle2(.quest) == 240954878211138)
     }
 }

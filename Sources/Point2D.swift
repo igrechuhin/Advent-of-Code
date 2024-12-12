@@ -54,25 +54,8 @@ struct Point2D: Hashable, CustomStringConvertible {
             x: ((x % size.x) + size.x) % size.x
         )
     }
-}
-
-extension [Point2D] {
-    var area: Int {
-        var area = 0
-        var perimeter = 0
-        
-        for vertexId in indices {
-            let p1 = self[vertexId]
-            let p2 = self[(vertexId + 1) % count]
-            area += p1.x * p2.y - p2.x * p1.y
-            // Simplified
-            perimeter += abs(p1.x - p2.x) + abs(p1.y - p2.y)
-        }
-        
-        area = abs(area) / 2
-        perimeter = perimeter / 2
-        //  The interior area of a polygon can be calculated using Pick's Theorem:
-        //  I = A - B/2 + 1
-        return area + perimeter + 1
+    
+    func isConnectedTo(_ other: Point2D, directions: [Direction2D]) -> Bool {
+        directions.contains { self + $0.point2D == other }
     }
 }

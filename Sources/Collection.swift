@@ -83,10 +83,45 @@ extension [[Character]] {
         }
         return result
     }
+    
+    func getUniqueCharacters() -> Set<Character> {
+        reduce(into: []) { result, row in
+            result.formUnion(row)
+        }
+    }
 
     func prettyPrint() {
         for row in self {
             print(String(row))
         }
+    }
+}
+
+extension Collection where Element == Point2D {
+    func connectedRegions(directions: [Direction2D]) -> [Set<Point2D>] {
+        var regions: [Set<Point2D>] = []
+        
+        for position in self {
+            // Find all regions connected to the current position
+            let connectedIndices = regions.indices.filter { index in
+                regions[index].contains {
+                    $0.isConnectedTo(position, directions: directions)
+                }
+            }
+            
+            if connectedIndices.isEmpty {
+                // No connected regions, create a new one
+                regions.append([position])
+            } else {
+                // Merge all connected regions and add the current position
+                var mergedRegion = Set([position])
+                for index in connectedIndices.reversed() {
+                    mergedRegion.formUnion(regions.remove(at: index))
+                }
+                regions.append(mergedRegion)
+            }
+        }
+        
+        return regions
     }
 }

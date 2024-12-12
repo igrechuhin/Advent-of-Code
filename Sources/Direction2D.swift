@@ -23,4 +23,11 @@ enum Direction2D: CaseIterable {
         case .east: return .south
         }
     }
+    
+    var isHorizontal: Bool {
+        switch self {
+        case .north, .south: return false
+        case .east, .west: return true
+        }
+    }
 }

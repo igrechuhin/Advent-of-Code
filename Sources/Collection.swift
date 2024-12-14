@@ -31,10 +31,10 @@ extension [[Character]] {
         indices.0.contains(point.y) && indices.1.contains(point.x)
     }
     
-    func mutated(position: Point2D, value: Character) -> [[Character]] {
-        guard self[safe: position] != nil else { return self }
+    func mutated(point: Point2D, value: Character) -> [[Character]] {
+        guard contains(point: point) else { return self }
         var copy = self
-        copy[position.y][position.x] = value
+        copy[point.y][point.x] = value
         return copy
     }
     
@@ -42,21 +42,29 @@ extension [[Character]] {
         assert(start.x <= end.x)
         assert(start.y <= end.y)
         
-        var result = [[Character]]()
+        guard contains(point: start),
+              contains(point: end),
+              start.x <= end.x,
+              start.y <= end.y
+        else { return nil }
         
-        for y in start.y ... end.y {
-            var row = [Character]()
-            for x in start.x ... end.x {
-                if let character = self[safe: Point2D(y: y, x: x)] {
-                    row.append(character)
-                } else {
-                    return nil
+        return self[start.y...end.y].map {
+            $0[start.x...end.x].map { $0 }
+        }
+    }
+    
+    func contains(subArray: [[Character]]) -> Bool {
+        let subArraySize = subArray.size
+        for y in 0 ..< count {
+            for x in 0 ..< self[0].count {
+                let start = Point2D(y: y, x: x)
+                let end = Point2D(y: y + subArraySize.y - 1, x: x + subArraySize.x - 1)
+                if self.subArray(from: start, to: end) == subArray {
+                    return true
                 }
             }
-            result.append(row)
         }
-        
-        return result
+        return false
     }
     
     func getFirstPositionOfCharacter(_ character: Character) -> Point2D? {

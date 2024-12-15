@@ -44,8 +44,8 @@ struct Point2D: Hashable, CustomStringConvertible {
     
     static var zero: Point2D { Point2D(y: 0, x: 0) }
     
-    func moved(_ direction: Direction2D) -> Point2D {
-        self + direction.point2D
+    func moved(_ direction: Direction2D, distance: Int = 1) -> Point2D {
+        self + (direction.point2D * distance)
     }
     
     func looped(size: Point2D) -> Point2D {

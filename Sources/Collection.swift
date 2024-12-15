@@ -37,7 +37,12 @@ extension [[Character]] {
         copy[point.y][point.x] = value
         return copy
     }
-    
+
+    mutating func mutate(point: Point2D, value: Character) {
+        assert(contains(point: point))
+        self[point.y][point.x] = value
+    }
+
     func subArray(from start: Point2D, to end: Point2D) -> [[Character]]? {
         assert(start.x <= end.x)
         assert(start.y <= end.y)

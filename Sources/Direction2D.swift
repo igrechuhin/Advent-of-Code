@@ -15,6 +15,15 @@ enum Direction2D: CaseIterable {
         }
     }
     
+    var rotatedLeft: Direction2D {
+        switch self {
+        case .north: return .west
+        case .west: return .south
+        case .south: return .east
+        case .east: return .north
+        }
+    }
+    
     var rotatedRight: Direction2D {
         switch self {
         case .north: return .east

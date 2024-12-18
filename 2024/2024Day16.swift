@@ -1,4 +1,5 @@
 import Foundation
+import Collections
 
 extension AoC2024 {
     private static func getPuzzleInput(mode: AoCMode) -> String {
@@ -235,11 +236,11 @@ private extension [[Character]] {
     func findShortestPaths(startPoint: Point2D, endPoint: Point2D) -> [Beam2D: Int] {
         let startWaypoint = Waypoint(beam: Beam2D(point: startPoint, direction: .east), score: 0)
         
-        var queue = Heap(array: [startWaypoint], sort: <)
+        var queue = Heap([startWaypoint])
         var seenBeams: [Beam2D: Int] = [startWaypoint.beam: startWaypoint.score]
         var minScore = Int.max
         
-        while let current = queue.remove() {
+        while let current = queue.popMin() {
             if current.score >= minScore { continue }
             if current.beam.point == endPoint {
                 minScore = Swift.min(minScore, current.score)

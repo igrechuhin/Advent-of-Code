@@ -4,6 +4,12 @@ struct Point2D: Hashable, CustomStringConvertible {
     var y: Int
     var x: Int
     
+    init(raw: String) {
+        let matches = raw.matches(of: /([+-]?\d+)/)
+        x = Int(matches[0].0)!
+        y = Int(matches[1].0)!
+    }
+    
     init(y: Int, x: Int) {
         self.y = y
         self.x = x

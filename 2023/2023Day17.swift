@@ -1,4 +1,5 @@
 import Foundation
+import Collections
 
 extension AoC2023 {
     private static func getDay17Input() -> String {
@@ -93,17 +94,14 @@ extension AoC2023 {
         end: Point2D,
         block: (Point2D, Direction2D, Int) -> [Waypoint]
     ) -> Int {
-        var heap = Heap(
-            array: [
-                Waypoint(beam: Beam2D(point: .zero, direction: .east), heatLossSum: 0),
-                Waypoint(beam: Beam2D(point: .zero, direction: .south), heatLossSum: 0)
-            ],
-            sort: <
-        )
+        var heap = Heap([
+            Waypoint(beam: Beam2D(point: .zero, direction: .east), heatLossSum: 0),
+            Waypoint(beam: Beam2D(point: .zero, direction: .south), heatLossSum: 0)
+        ])
         
         var minHeatLoss = Int.max
         
-        while let current = heap.remove() {
+        while let current = heap.popMin() {
             if current.beam.point == end {
                 minHeatLoss = min(minHeatLoss, current.heatLossSum)
                 continue
@@ -114,7 +112,7 @@ extension AoC2023 {
             
             for direction in current.beam.direction.turnDirections {
                 heap.insert(
-                    block(current.beam.point, direction, current.heatLossSum)
+                    contentsOf: block(current.beam.point, direction, current.heatLossSum)
                 )
             }
         }

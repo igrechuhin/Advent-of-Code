@@ -15,6 +15,13 @@ extension [[Int]] {
 }
 
 extension [[Character]] {
+    static func make(size: Point2D, value: Character) -> [[Character]] {
+        Array(
+            repeating: Array<Character>(repeating: value, count: size.x),
+            count: size.y
+        )
+    }
+    
     var size: Point2D {
         Point2D(y: count, x: self[0].count)
     }

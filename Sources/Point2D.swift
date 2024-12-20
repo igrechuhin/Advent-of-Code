@@ -65,3 +65,8 @@ struct Point2D: Hashable, CustomStringConvertible {
         directions.contains { self + $0.point2D == other }
     }
 }
+
+@inline(__always)
+func L1Distance(_ a: Point2D, _ b: Point2D) -> Int {
+    abs(a.x - b.x) + abs(a.y - b.y)
+}

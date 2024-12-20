@@ -205,7 +205,7 @@ private struct Waypoint: Hashable, Comparable {
 }
 
 private extension[[Character]] {
-    mutating func findShortestPaths(startPoint: Point2D, endPoint: Point2D) -> [Point2D: Int] {
+    func findShortestPaths(startPoint: Point2D, endPoint: Point2D) -> [Point2D: Int] {
         let startWaypoint = Waypoint(point: startPoint, score: 0)
         
         var queue = Heap([startWaypoint])

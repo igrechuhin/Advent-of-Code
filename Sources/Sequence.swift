@@ -13,3 +13,7 @@ extension Sequence where Element == Int {
 extension Sequence where Element: Numeric {
     var mul: Element { reduce(1, *) }
 }
+
+extension Zip2Sequence<[Int], [Int]> {
+    var mul: [Int] { map { $0 * $1 } }
+}

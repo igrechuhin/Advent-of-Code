@@ -40,6 +40,12 @@
 		12C0B8CD2D09867B009D5F34 /* Day11Input.Test1.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 12C0B8CC2D09867B009D5F34 /* Day11Input.Test1.txt */; };
 		12C0B8CF2D09882F009D5F34 /* Day11Input.Test2.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 12C0B8CE2D09882F009D5F34 /* Day11Input.Test2.txt */; };
 		12C0B8D12D0988A3009D5F34 /* Day11Input.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 12C0B8D02D0988A3009D5F34 /* Day11Input.txt */; };
+		12C0ECC92D1814680062621F /* 2024Day22.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0ECC82D1814680062621F /* 2024Day22.swift */; };
+		12C0ECCB2D1817BB0062621F /* Day22Input.Test1.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 12C0ECCA2D1817BB0062621F /* Day22Input.Test1.txt */; };
+		12C0ECCD2D18191D0062621F /* Day22Input.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 12C0ECCC2D18191D0062621F /* Day22Input.txt */; };
+		12C0ECCF2D181B4A0062621F /* Day22Input.Test2.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 12C0ECCE2D181B4A0062621F /* Day22Input.Test2.txt */; };
+		12C0ECD22D1848C90062621F /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 12C0ECD12D1848C90062621F /* Algorithms */; };
+		12C0ECD42D1855940062621F /* Collection+Parallel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C0ECD32D18558A0062621F /* Collection+Parallel.swift */; };
 		12C4B2B52D11B1BF0096ED00 /* Day17Input.Test1.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 12C4B2B42D11B1BF0096ED00 /* Day17Input.Test1.txt */; };
 		12C4B2B72D11B1E80096ED00 /* 2024Day17.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C4B2B62D11B1E80096ED00 /* 2024Day17.swift */; };
 		12C4B2B92D11BDF70096ED00 /* Day17Input.txt in Resources.2024 */ = {isa = PBXBuildFile; fileRef = 12C4B2B82D11BDF70096ED00 /* Day17Input.txt */; };
@@ -176,6 +182,7 @@
 				12E196082D0EE321001D9DC2 /* Day15Input.txt in Resources.2024 */,
 				12967F492D0C274B004AB58D /* Day13Input.Test1.txt in Resources.2024 */,
 				127904072D16D93000245B9B /* Day21Input.Test1.txt in Resources.2024 */,
+				12C0ECCD2D18191D0062621F /* Day22Input.txt in Resources.2024 */,
 				34B3BFBF2CFC74EB00F36067 /* Day1Input.Test1.txt in Resources.2024 */,
 				12AEC57D2D0B017C0009AD13 /* Day12Input.Test2.txt in Resources.2024 */,
 				34556D912D06B48900423D6F /* Day9Input.Test1.txt in Resources.2024 */,
@@ -200,6 +207,7 @@
 				34556D872D05927900423D6F /* Day8Input.Test1.txt in Resources.2024 */,
 				12AEC5792D0AFBB20009AD13 /* Day12Input.Test1.txt in Resources.2024 */,
 				12E7E8F72D02EAAD0061F34D /* Day6Input.txt in Resources.2024 */,
+				12C0ECCF2D181B4A0062621F /* Day22Input.Test2.txt in Resources.2024 */,
 				129CBE2F2D15505000DE5F82 /* Day20Input.txt in Resources.2024 */,
 				34AFBAAC2D0049610088ED8F /* Day4Input.txt in Resources.2024 */,
 				34C95A5B2CFECE3E002419FB /* Day3Input.Test2.txt in Resources.2024 */,
@@ -212,6 +220,7 @@
 				12D6EEDB2D10326300B7F485 /* Day16Input.txt in Resources.2024 */,
 				12F5755F2D14116100DEACE3 /* Day19Input.Test1.txt in Resources.2024 */,
 				34C95A562CFEC5C8002419FB /* Day3Input.txt in Resources.2024 */,
+				12C0ECCB2D1817BB0062621F /* Day22Input.Test1.txt in Resources.2024 */,
 				12A17D152D12C10E0060F2E0 /* Day18Input.txt in Resources.2024 */,
 				123393BD2D08701500DD956D /* Day10Input.Test1.txt in Resources.2024 */,
 				12C0B8D12D0988A3009D5F34 /* Day11Input.txt in Resources.2024 */,
@@ -322,6 +331,11 @@
 		12C0B8CC2D09867B009D5F34 /* Day11Input.Test1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11Input.Test1.txt; sourceTree = "<group>"; };
 		12C0B8CE2D09882F009D5F34 /* Day11Input.Test2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11Input.Test2.txt; sourceTree = "<group>"; };
 		12C0B8D02D0988A3009D5F34 /* Day11Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day11Input.txt; sourceTree = "<group>"; };
+		12C0ECC82D1814680062621F /* 2024Day22.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2024Day22.swift; sourceTree = "<group>"; };
+		12C0ECCA2D1817BB0062621F /* Day22Input.Test1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day22Input.Test1.txt; sourceTree = "<group>"; };
+		12C0ECCC2D18191D0062621F /* Day22Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day22Input.txt; sourceTree = "<group>"; };
+		12C0ECCE2D181B4A0062621F /* Day22Input.Test2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day22Input.Test2.txt; sourceTree = "<group>"; };
+		12C0ECD32D18558A0062621F /* Collection+Parallel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Parallel.swift"; sourceTree = "<group>"; };
 		12C4B2B42D11B1BF0096ED00 /* Day17Input.Test1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day17Input.Test1.txt; sourceTree = "<group>"; };
 		12C4B2B62D11B1E80096ED00 /* 2024Day17.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2024Day17.swift; sourceTree = "<group>"; };
 		12C4B2B82D11BDF70096ED00 /* Day17Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day17Input.txt; sourceTree = "<group>"; };
@@ -444,6 +458,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C0ECD22D1848C90062621F /* Algorithms in Frameworks */,
 				12C4B2BC2D11F94C0096ED00 /* BitCollections in Frameworks */,
 				12E7E8FC2D0307CA0061F34D /* Atomics in Frameworks */,
 				12C4B2BE2D11F94C0096ED00 /* Collections in Frameworks */,
@@ -489,6 +504,7 @@
 		34B3BE8C2CFC576500F36067 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				12C0ECD32D18558A0062621F /* Collection+Parallel.swift */,
 				34B3BFC22CFC762300F36067 /* AoC.swift */,
 				34B3BE832CFC576500F36067 /* Beam2D.swift */,
 				34B3BE842CFC576500F36067 /* Collection.swift */,
@@ -553,6 +569,9 @@
 				129CBE2A2D15470A00DE5F82 /* Day20Input.Test1.txt */,
 				1279040A2D17095700245B9B /* Day21Input.txt */,
 				127904062D16D93000245B9B /* Day21Input.Test1.txt */,
+				12C0ECCC2D18191D0062621F /* Day22Input.txt */,
+				12C0ECCA2D1817BB0062621F /* Day22Input.Test1.txt */,
+				12C0ECCE2D181B4A0062621F /* Day22Input.Test2.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -583,6 +602,7 @@
 				12F5755C2D14112900DEACE3 /* 2024Day19.swift */,
 				129CBE2C2D15471800DE5F82 /* 2024Day20.swift */,
 				127904082D16D94200245B9B /* 2024Day21.swift */,
+				12C0ECC82D1814680062621F /* 2024Day22.swift */,
 			);
 			path = 2024;
 			sourceTree = "<group>";
@@ -711,6 +731,7 @@
 				12C4B2BF2D11F94D0096ED00 /* DequeModule */,
 				12C4B2C12D11F94D0096ED00 /* HashTreeCollections */,
 				12C4B2C32D11F94D0096ED00 /* HeapModule */,
+				12C0ECD12D1848C90062621F /* Algorithms */,
 			);
 			productName = "Advent of Code";
 			productReference = 1271D49C2B38D216006133F9 /* Advent of Code */;
@@ -744,6 +765,7 @@
 				129822CE2B38D30900EA63D9 /* XCRemoteSwiftPackageReference "swift-z3" */,
 				12E7E8FA2D0307CA0061F34D /* XCRemoteSwiftPackageReference "swift-atomics" */,
 				12C4B2BA2D11F94C0096ED00 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				12C0ECD02D1848C90062621F /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 			);
 			productRefGroup = 1271D49D2B38D216006133F9 /* Products */;
 			projectDirPath = "";
@@ -766,7 +788,9 @@
 				34AFBB1F2D0422F10088ED8F /* 2024Day7.swift in Sources */,
 				34B3BE8D2CFC576500F36067 /* Direction2D.swift in Sources */,
 				34B3BEA32CFC5BA500F36067 /* 2024.swift in Sources */,
+				12C0ECC92D1814680062621F /* 2024Day22.swift in Sources */,
 				34B3BEA42CFC5BA500F36067 /* 2024Day1.swift in Sources */,
+				12C0ECD42D1855940062621F /* Collection+Parallel.swift in Sources */,
 				34C95A942CFF6560002419FB /* 2015Day4.swift in Sources */,
 				34B3BE8E2CFC576500F36067 /* Sequence.swift in Sources */,
 				1238C8222CFD9B4F00F6AC66 /* 2024Day2.swift in Sources */,
@@ -1001,6 +1025,14 @@
 				kind = branch;
 			};
 		};
+		12C0ECD02D1848C90062621F /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 		12C4B2BA2D11F94C0096ED00 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-collections.git";
@@ -1029,6 +1061,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 129822CE2B38D30900EA63D9 /* XCRemoteSwiftPackageReference "swift-z3" */;
 			productName = SwiftZ3;
+		};
+		12C0ECD12D1848C90062621F /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12C0ECD02D1848C90062621F /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
 		};
 		12C4B2BB2D11F94C0096ED00 /* BitCollections */ = {
 			isa = XCSwiftPackageProductDependency;

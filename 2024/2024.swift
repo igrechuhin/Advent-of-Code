@@ -122,8 +122,12 @@ enum AoC2024: AoC {
         
         assert(solveDay23Puzzle1(.test1) == 7)
         assert(solveDay23Puzzle1(.quest) == 1370)
-        
         assert(solveDay23Puzzle2(.test1) == "co,de,ka,ta")
         assert(solveDay23Puzzle2(.quest) == "am,au,be,cm,fo,ha,hh,im,nt,os,qz,rr,so")
+        
+        assert(solveDay24Puzzle1(.test1) == 4)
+        assert(solveDay24Puzzle1(.test2) == 2024)
+        assert(solveDay24Puzzle1(.quest) == 61886126253040)
+        assert(solveDay24Puzzle2(.quest) == "fgt,fpq,nqk,pcp,srn,z07,z24,z32")
     }
 }

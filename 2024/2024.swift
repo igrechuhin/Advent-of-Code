@@ -129,5 +129,8 @@ enum AoC2024: AoC {
         assert(solveDay24Puzzle1(.test2) == 2024)
         assert(solveDay24Puzzle1(.quest) == 61886126253040)
         assert(solveDay24Puzzle2(.quest) == "fgt,fpq,nqk,pcp,srn,z07,z24,z32")
+        
+        print(solveDay25Puzzle1(.test1))
+        print(solveDay25Puzzle1(.quest))
     }
 }

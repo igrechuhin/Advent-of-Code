@@ -14,6 +14,7 @@ enum AoCYear: String {
     case year2015 = "2015"
     case year2023 = "2023"
     case year2024 = "2024"
+    case year2025 = "2025"
 }
 
 enum AoCDay: String {
